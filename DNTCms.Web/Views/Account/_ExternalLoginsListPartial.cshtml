@@ -1,0 +1,22 @@
+﻿@model DNTCms.ViewModel.Account.ExternalLoginListViewModel
+@using System.Linq
+@using Microsoft.Owin.Security
+
+@if (Model.AuthenticationDescriptions!=null && Model.AuthenticationDescriptions.Any())
+{
+    using (Html.BeginForm(MVC.Account.ExternalLogin(), FormMethod.Post, htmlAttributes: new { @class = "form-horizontal", role = "form", id = "externalLoginForm", autocomplete = "off" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m=>m.ReturnUrl)
+        foreach (var p in Model.AuthenticationDescriptions)
+        {
+            <div class="col-md-6">
+                <button type="button" autocomplete="off" id="@p.AuthenticationType"  onclick=" AjaxForm.CustomSubmit(this, 'externalLoginForm')" data-loading-text="در حال ارسال اطلاعات" class="btn btn-danger btn-block text-capitalize">
+                    @p.AuthenticationType
+                </button>
+            </div>
+        }
+
+    }
+}
+

@@ -1,0 +1,35 @@
+.has-error,
+.has-warning,
+.has-success {
+    .form-control {
+        border-width: 2px !important;
+    }
+}
+/*
+    Form page
+*/
+
+.line-status{
+    border-bottom: $gray 3px solid;
+    .status{
+        padding-bottom: 2px;
+        border-bottom: $brand-danger 3px solid;
+    }
+}
+input[type="radio"], input[type="checkbox"]{
+    margin: 10px 0 0;
+}
+li{
+    &.text-muted{
+        font-style: italic;
+    }
+}
+select.input-sm{
+    padding: 3px 9px;
+}
+
+.fa-select{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+}

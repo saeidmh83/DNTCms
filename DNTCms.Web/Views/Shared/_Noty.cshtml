@@ -1,0 +1,10 @@
+
+@using DNTCms.Common.Noty
+@using DNTCms.Web.RazorHelpers
+
+@if (TempData.ContainsKey(Noty.TempDataKey))
+{
+    var noty = TempData[Noty.TempDataKey] as Noty;
+    @NotyBuilder.ShowNotyMessages(noty);
+}
+

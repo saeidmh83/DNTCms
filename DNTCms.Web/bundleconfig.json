@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "Scripts/site.js",
+    "inputFiles": [
+      "Scripts/site.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Fallback/scripts.js",
+    "inputFiles": [
+      "Scripts/Fallback/scripts.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Fallback/styles.js",
+    "inputFiles": [
+      "Scripts/Fallback/styles.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jqueryval-default.js",
+    "inputFiles": [
+      "Scripts/jqueryval-default.js"
+    ]
+  }
+]

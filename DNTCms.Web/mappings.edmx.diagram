@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Edmx Version="3.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <Designer>
+    <Diagrams>
+      <Diagram DiagramId="b9151d12f8e54e608790c7deca6a1ede" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Role" Width="1.5" PointX="21" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.UserRole" Width="1.5" PointX="23.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.User" Width="1.5" PointX="18" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.AnnouncementComment" Width="1.5" PointX="15.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Announcement" Width="1.5" PointX="13.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Tag" Width="1.5" PointX="23" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.BlogPost" Width="1.5" PointX="10.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.BlogComment" Width="1.5" PointX="15.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.LinkBack" Width="1.5" PointX="8.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumTopic" Width="1.5" PointX="10.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Forum" Width="1.5" PointX="8.5" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumAnnouncement" Width="1.5" PointX="15.75" PointY="83" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumModerator" Width="1.5" PointX="20.25" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumPost" Width="1.5" PointX="6.25" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumPostHistory" Width="1.5" PointX="20.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumTopicTracker" Width="1.5" PointX="6.25" PointY="52.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ForumTracker" Width="1.5" PointX="23.25" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.NewsItem" Width="1.5" PointX="15.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.NewsComment" Width="1.5" PointX="13.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.BaseAttachment" Width="1.5" PointX="27" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Attachment" Width="1.5" PointX="30.375" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ConversationAttachment" Width="1.5" PointX="28.125" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Conversation" Width="1.5" PointX="25.625" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ConversationReply" Width="1.75" PointX="20.125" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.CollectionAttachment" Width="1.5" PointX="16" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Collection" Width="1.5" PointX="5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.CollectionPost" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.CollectionComment" Width="1.75" PointX="0.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.BlogDraft" Width="1.5" PointX="20.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.UserClaim" Width="1.5" PointX="20.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.UserLogin" Width="1.5" PointX="20.25" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.AuditLog" Width="1.5" PointX="15.75" PointY="88" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Observation" Width="1.5" PointX="20.25" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.PollComment" Width="1.5" PointX="10.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Poll" Width="1.5" PointX="7.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.PollOption" Width="1.5" PointX="10" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.UserRating" Width="1.5" PointX="20.25" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Report" Width="1.5" PointX="13.5" PointY="91.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.ReportReason" Width="1.5" PointX="15.75" PointY="91" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.Page" Width="1.5" PointX="15.75" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.BannedDomain" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DNTCms.DataLayer.Context.BannedWord" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <InheritanceConnector EntityType="DNTCms.DataLayer.Context.Attachment" ManuallyRouted="false" />
+        <InheritanceConnector EntityType="DNTCms.DataLayer.Context.ConversationAttachment" ManuallyRouted="false" />
+        <InheritanceConnector EntityType="DNTCms.DataLayer.Context.CollectionAttachment" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Role_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Announcement_Comments" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Announcement_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Announcement_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogComment_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogComment_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogComment_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogPost_Contributors" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogPost_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.LinkBack_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogPost_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.BlogPost_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopic_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumAnnouncement_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumAnnouncement_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_Announcements" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_Moderators" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumPost_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumPost_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumPost_Forum" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumPost_Histories" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumPost_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_Subscribers" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_Topics" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopicTracker_Forum" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Forum_Trackers" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopic_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopic_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopic_Subscribers" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopic_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ForumTopic_Trackers" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.NewsComment_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.NewsComment_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.NewsComment_NewsItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.NewsItem_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.NewsItem_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.NewsItem_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Announcement_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.AnnouncementComment_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.AnnouncementComment_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ConversationReply_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ConversationReply_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ConversationAttachment_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Collection_Attachments" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Collection_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Collection_Memebers" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Collection_Modifier" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.CollectionPost_Collection" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.CollectionComment_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.CollectionComment_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.CollectionComment_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.CollectionPost_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.CollectionPost_Modifier" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Collection_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Attachments" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_BlogDrafts" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Claims" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_CollectionPosts" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Logins" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.AuditLog_OperatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_ModeratedForums" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_ModifiedForumPostHistories" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Observations" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.PollComment_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.PollComment_Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Poll_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Poll_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Poll_Options" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Poll_Tags" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Poll_Voters" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.PollComment_Poll" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Ratings" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_ReceivedConversations" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ReportReason_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.ReportReason_ModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Report_ReasonType" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_SentConversations" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_SentMessages" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_TrackedForums" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.User_TrackedForumTopics" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Page_Children" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Page_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="DNTCms.DataLayer.Context.Page_ModifiedBy" ManuallyRouted="false" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</Edmx>

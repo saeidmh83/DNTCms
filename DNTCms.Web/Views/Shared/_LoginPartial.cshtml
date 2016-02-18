@@ -1,0 +1,68 @@
+﻿
+@using DNTCms.ServiceLayer.Security
+@using DNTCms.Web.HtmlHelpers
+@using Auth = DNTCms.ServiceLayer.Security.AssignableToRolePermissions
+<div class="navbar-collapse collapse" id="navbar-main">
+    <ul class="nav navbar-nav">
+
+        @if (Context.User.IsInRole(Auth.CanManageUser))
+        {
+            <li class="main">
+                @*@Html.SecureActionLink("مدیریت کاربران", MVC.Administrator.User.List())*@
+            </li>
+            <li class="main">
+                @Html.SecureActionLink("لاگ سیستم", MVC.Administrator.Elmah.Index())
+            </li>
+        }
+
+    </ul>
+    <ul class="nav navbar-nav navbar-left">
+        @if (Context.User.IsInRole(StandardRoles.Administrators))
+        {
+            <li class="dropdown noti-dropdown main">
+                <a href="#">
+                    <span class="badge bage-noti digit"></span>
+                    <span class="fa fa-warning  animated infinite fadeIn"></span>
+                    قرار های امروز
+                </a>
+            </li>
+        }
+
+        <li>
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button class="dl-trigger"></button>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="@Url.Action(MVC.Account.UploadAvatar())">
+                            ویرایش تصویر کاربری
+                        </a>
+                    </li>
+                    @if (Context.User.IsInRole(StandardRoles.Administrators))
+                    {
+                        <li>
+                            <a href="#">
+                                ملاقات ها
+                                <span class="fa fa-caret-left pull-left"></span>
+                            </a>
+
+                            <ul class="dl-submenu">
+                                  </ul>
+                            
+                        </li>
+                    }
+                    <li>
+                        @using (Html.BeginForm(MVC.Account.LogOff(), FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <a href="javascript:document.getElementById('logoutForm').submit()">خروج</a>
+                        }
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /dl-menuwrapper -->
+        </li>
+    </ul>
+</div>

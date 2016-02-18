@@ -1,0 +1,44 @@
+.bench-marks {
+    .media {
+        border-radius: 4px;
+        margin: 5px;
+        .media-heading {
+            font-size: 100%;
+        }
+        small,
+        a {
+            font-size: 80%;
+        }
+        ul {
+            font-size: 12px;
+        }
+        .media-left {
+            display: block;
+            font-size: 1.3em;
+            @include opacity(.7);
+            @include transition(.3s all);
+            text-shadow: 1px 1px 0 rgba(2, 2, 1, .31);
+        }
+        .media-heading{
+            font-size: .54em;
+            .digit{
+                font-size: 1.1em;
+            }
+        }
+        .media-body {
+            a {
+                color: #fff;
+                &:hover {
+                    border-bottom: 1px solid #eee !important;
+                    .fa {
+                        @extend .animated , .shake;
+                    }
+                }
+            }
+        }
+        &:hover .media-left {
+            @include scale(1.1);
+            @include opacity(1);
+        }
+    }
+}

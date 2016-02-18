@@ -1,0 +1,107 @@
+// from : http://type-scale.com/?size=16&scale=1.414&text=A%20Visual%20Type%20Scale&webfont=Libre+Baskerville&font-family=%27Libre%20Baskerville%27,%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
+// Scale : 1.414
+body {
+    font-family: IRANSans-web;
+    .ui-datepicker-div,
+    .datepicker {
+        font-family: "wYekan";
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    #main-nav,
+    #dl-menu,
+     {
+        font-family: IRANSans-web;
+        font-weight: 500 !important;
+    }
+    .panel-heading>h3,
+    .panel-heading>h4,
+    .panel-heading>h2,
+    .panel-heading>h1,
+    .panel-heading>h5 {
+
+        //font-family: 'WYekan' !important;
+        .btn {
+            font-family: IRANSans-web;
+            font-weight: bolder;
+        }
+    }
+    [type="submit"] {
+        font-family: IRANSans-web;
+    }
+}
+html {
+    font-size: 1em;
+}
+body {
+    background-color: white;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+}
+p {
+    margin-bottom: 1.3em;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.014em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+h1 {
+    margin-top: 0;
+    font-size: 2.441em;
+}
+h2 {
+    font-size: 1.953em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+small,
+.font_small {
+    font-size: 0.8em;
+}
+li.main {
+    font-size: 0.9em;
+}
+aside,
+.btn,
+.input-group-btn {
+    font-size: 0.8em;
+}
+.status {
+    font-size: 1.3em;
+}
+@media (min-width : 440px ) {
+    .media-heading {
+        small {
+            font-size: 1.111em;
+        }
+    }
+}
+.alert.alert-info {
+    font-size: 0.8em;
+}
+.panel-title {
+    font-size: 1em;
+}
+.field-validation-error,
+label,
+.label,
+time {
+    font-size: 0.812em;
+}
+.form-control,
+ul.nav .nav-tabs li {
+    font-size: 0.75em;
+}

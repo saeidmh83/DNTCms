@@ -1,0 +1,40 @@
+﻿
+@using CaptchaMvc.HtmlHelpers
+@using DNTCms.Common.Extentions
+@using DNTCms.Common.Helpers
+@using DNTCms.Common.HtmlHelpers
+@model DNTCms.ViewModel.Account.ChangeAvatarViewModel
+@{
+    ViewBag.Title = "تغییر تصویر کاربری";
+}
+<div class="row margin-top-5">
+    @using (Html.BeginForm(MVC.Account.UploadAvatar(), FormMethod.Post, htmlAttributes: new { @class = "form-horizontal", role = "form", id = "avatarForm", autocomplete = "off", enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="col-md-2">
+            @Html.Image((byte[])ViewBag.Avatar, "تصویر کاربری", "img-rounded img-responsive img-thumbnail", 130)
+        </div>
+        <div class="col-md-10">
+            <div class="panel  panel-default">
+                <div class="panel-heading">
+                    @Html.HelpAlert(Url.Content("~/Content/Images/lightbulb.png"),
+                        "کاربر گرامی از این قسمت برای تغییر تصویر کاربری خود استفاده کنید",
+                        "لطفا از فایل های png-jpg-gif-jpeg فقط استفاده کنید", "به صورت پیش فرض ، تصویری برای شما در نظر گرفته شده است")
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(model => model.Avatar, new { type = "file", @class = "form-control" })
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" autocomplete="off" onclick=" AjaxForm.CustomSubmit(this, 'avatarForm')" data-loading-text="در حال ارسال اطلاعات" class="btn btn-success btn-block">
+                        ارسال به سرور
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

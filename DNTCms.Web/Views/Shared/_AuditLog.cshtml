@@ -1,0 +1,13 @@
+﻿@using AttributeRouting.Helpers
+@using DNTCms.Utility
+@model DNTCms.ViewModel.Common.BaseViewModel
+<hr class="margin-bottom-5 margin-top-5">
+<div class="row">
+    <div class="col-md-3">
+        <i class="fa fa-calendar-o"></i>
+        <small>ثبت شده در :</small>
+        <time>@Model.CreateDate.ToPersianString(PersianDateTimeFormat.Date)</time>
+        <i class="fa fa-clock-o "></i>
+        <time>@Model.CreateDate.ToPersianTimeString()</time>
+    </div>
+</div>

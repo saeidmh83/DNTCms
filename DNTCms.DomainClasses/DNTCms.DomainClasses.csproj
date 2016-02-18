@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92257C51-3D8B-4C54-B09D-23ECA65839ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DNTCms.DomainClasses</RootNamespace>
+    <AssemblyName>DNTCms.DomainClasses</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurations\Announcement\AnnouncementCommentConfig.cs" />
+    <Compile Include="Configurations\Announcement\AnnouncementConfig.cs" />
+    <Compile Include="Configurations\Blog\BlogCommentConfig.cs" />
+    <Compile Include="Configurations\Blog\BlogPostConfig.cs" />
+    <Compile Include="Configurations\Blog\DraftPostConfig.cs" />
+    <Compile Include="Configurations\Cms\BannedDomainConfig.cs" />
+    <Compile Include="Configurations\Cms\BannedWordConfig.cs" />
+    <Compile Include="Configurations\Cms\PromotionConfig.cs" />
+    <Compile Include="Configurations\Cms\ReportConfig.cs" />
+    <Compile Include="Configurations\Cms\ReportReasonConfig.cs" />
+    <Compile Include="Configurations\Cms\SettingConfig.cs" />
+    <Compile Include="Configurations\Cms\UserRatingConfig.cs" />
+    <Compile Include="Configurations\Cms\AuditLogConfig.cs" />
+    <Compile Include="Configurations\Common\BaseEntityTypeConfiguration.cs" />
+    <Compile Include="Configurations\Common\TagConfig.cs" />
+    <Compile Include="Configurations\File\BaseAttachmentConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumAnnouncementConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumModeratorConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumPostConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumTopicConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumTopicTrackerConfig.cs" />
+    <Compile Include="Configurations\Forums\ForumTrackerConfig.cs" />
+    <Compile Include="Configurations\MessagingSystem\MessageConfig.cs" />
+    <Compile Include="Configurations\MessagingSystem\MessageRecipientConfig.cs" />
+    <Compile Include="Configurations\MessagingSystem\ReminderFrequencyConfig.cs" />
+    <Compile Include="Configurations\News\NewsCommentConfig.cs" />
+    <Compile Include="Configurations\News\NewsItemConfig.cs" />
+    <Compile Include="Configurations\Pages\PageConfig.cs" />
+    <Compile Include="Configurations\Polling\PollCommentConfig.cs" />
+    <Compile Include="Configurations\Polling\PollConfig.cs" />
+    <Compile Include="Configurations\Polling\PollOptionConfig.cs" />
+    <Compile Include="Configurations\PrivateMessage\ConversationAttachmentConfig.cs" />
+    <Compile Include="Configurations\PrivateMessage\ConversationConfig.cs" />
+    <Compile Include="Configurations\PrivateMessage\ConversationReplyConfig.cs" />
+    <Compile Include="Configurations\Social\CollectionCommentConfig.cs" />
+    <Compile Include="Configurations\Social\CollectionConfig.cs" />
+    <Compile Include="Configurations\Social\CollectionPostConfig.cs" />
+    <Compile Include="Configurations\Users\FavoriteConfig.cs" />
+    <Compile Include="Entities\Announcements\Announcement.cs" />
+    <Compile Include="Entities\Announcements\AnnouncementComment.cs" />
+    <Compile Include="Entities\Blog\BlogComment.cs" />
+    <Compile Include="Entities\Blog\BlogPost.cs" />
+    <Compile Include="Entities\Blog\BlogDraft.cs" />
+    <Compile Include="Entities\Blog\LinkBackStatus.cs" />
+    <Compile Include="Entities\Blog\LinkBackType.cs" />
+    <Compile Include="Entities\Cms\AuditAction.cs" />
+    <Compile Include="Entities\Cms\Badge.cs" />
+    <Compile Include="Entities\Cms\BadgeClass.cs" />
+    <Compile Include="Entities\Cms\BadgeType.cs" />
+    <Compile Include="Entities\Cms\BannedDomain.cs" />
+    <Compile Include="Entities\Cms\BannedWord.cs" />
+    <Compile Include="Entities\Blog\LinkBack.cs" />
+    <Compile Include="Entities\Cms\Observation.cs" />
+    <Compile Include="Entities\Cms\Report.cs" />
+    <Compile Include="Entities\Cms\ReportReason.cs" />
+    <Compile Include="Entities\Common\AttachmentSection.cs" />
+    <Compile Include="Entities\Common\BaseAttachment.cs" />
+    <Compile Include="Entities\Common\BaseComment.cs" />
+    <Compile Include="Entities\Common\BaseEntity.cs" />
+    <Compile Include="Entities\Common\CommentStatus.cs" />
+    <Compile Include="Entities\Common\BaseContent.cs" />
+    <Compile Include="Entities\Cms\Rating.cs" />
+    <Compile Include="Entities\Common\Entity.cs" />
+    <Compile Include="Entities\Common\Tag.cs" />
+    <Compile Include="Entities\Cms\UserRating.cs" />
+    <Compile Include="Entities\Files\Attachment.cs" />
+    <Compile Include="Entities\Forums\Forum.cs" />
+    <Compile Include="Entities\Forums\ForumAnnouncement.cs" />
+    <Compile Include="Entities\Forums\ForumModerator.cs" />
+    <Compile Include="Entities\Forums\ForumModeratorPermissions.cs" />
+    <Compile Include="Entities\Forums\ForumPost.cs" />
+    <Compile Include="Entities\Forums\ForumPostStatus.cs" />
+    <Compile Include="Entities\Forums\ForumTopicLevel.cs" />
+    <Compile Include="Entities\Forums\ForumTopic.cs" />
+    <Compile Include="Entities\Forums\ForumTopicTracker.cs" />
+    <Compile Include="Entities\Forums\ForumTopicType.cs" />
+    <Compile Include="Entities\Forums\ForumTracker.cs" />
+    <Compile Include="Entities\PrivateMessage\ConversationAttachment.cs" />
+    <Compile Include="Entities\Cms\PromotionLog.cs" />
+    <Compile Include="Entities\Social\Collection.cs" />
+    <Compile Include="Entities\Social\CollectionAttachment.cs" />
+    <Compile Include="Entities\Social\CollectionComment.cs" />
+    <Compile Include="Entities\Social\CollectionPost.cs" />
+    <Compile Include="Entities\MessagingSystem\Message.cs" />
+    <Compile Include="Entities\MessagingSystem\MessageRecipient.cs" />
+    <Compile Include="Entities\MessagingSystem\ReminderFrequency.cs" />
+    <Compile Include="Entities\News\NewsComment.cs" />
+    <Compile Include="Entities\News\NewsItem.cs" />
+    <Compile Include="Entities\Pages\Page.cs" />
+    <Compile Include="Entities\Pages\ShowPageSection.cs" />
+    <Compile Include="Entities\Polling\Poll.cs" />
+    <Compile Include="Entities\Polling\PollComment.cs" />
+    <Compile Include="Entities\Polling\PollOption.cs" />
+    <Compile Include="Entities\PrivateMessage\Conversation.cs" />
+    <Compile Include="Entities\PrivateMessage\ConversationReply.cs" />
+    <Compile Include="Entities\Social\CollectionVisibility.cs" />
+    <Compile Include="Entities\Users\ActivityLog.cs" />
+    <Compile Include="Entities\Users\ActivityLogType.cs" />
+    <Compile Include="Entities\Users\DisabledPermissions.cs" />
+    <Compile Include="Entities\Users\EmailReceiveAllows.cs" />
+    <Compile Include="Entities\Users\Favorite.cs" />
+    <Compile Include="Entities\Users\Notification.cs" />
+    <Compile Include="Configurations\Users\RoleConfig.cs" />
+    <Compile Include="Configurations\Users\UserClaimConfig.cs" />
+    <Compile Include="Configurations\Users\UserConfig.cs" />
+    <Compile Include="Configurations\Users\UserLoginConfig.cs" />
+    <Compile Include="Configurations\Users\UserRoleConfig.cs" />
+    <Compile Include="Entities\Cms\AuditLog.cs" />
+    <Compile Include="Entities\Cms\Setting.cs" />
+    <Compile Include="Entities\Users\NotificationType.cs" />
+    <Compile Include="Entities\Users\NotifyAllows.cs" />
+    <Compile Include="Entities\Cms\Promotion.cs" />
+    <Compile Include="Entities\Cms\PromotionRequirements.cs" />
+    <Compile Include="Entities\Users\ReceiveNotificationStatus.cs" />
+    <Compile Include="Entities\Users\ReputationLog.cs" />
+    <Compile Include="Entities\Users\Role.cs" />
+    <Compile Include="Entities\Users\Roles.cs" />
+    <Compile Include="Entities\Users\User.cs" />
+    <Compile Include="Entities\Users\UserClaim.cs" />
+    <Compile Include="Entities\Users\UserLogin.cs" />
+    <Compile Include="Entities\Users\UserRegistrationType.cs" />
+    <Compile Include="Entities\Users\UserRole.cs" />
+    <Compile Include="Entities\Users\UserStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DNTCms.Utility\DNTCms.Utility.csproj">
+      <Project>{1f30bf22-bac2-4f0f-9c1f-2ee1282e25fd}</Project>
+      <Name>DNTCms.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

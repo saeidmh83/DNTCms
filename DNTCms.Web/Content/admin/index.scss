@@ -1,0 +1,28 @@
+.log-list {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.9444em;
+    @include transition(.3s all);
+    @include blur(0);
+    &:hover {
+        @include box-shadow(inset 0px 0px 10px 3px rgba(0,0,0,0.05));
+        .badge{
+            background-color: #1a252f;
+        }
+    }
+    .badge{
+        font-weight: normal !important;
+        background-color: #92979C;
+        @include transition(.3s all);
+    }
+}
+.list-group-item-success,
+.list-group-item-danger,
+.list-group-item-info {
+    color: #fff;
+    border: none;
+}
+.panel-default>.panel-heading{
+    background-color: #fafafa;
+}

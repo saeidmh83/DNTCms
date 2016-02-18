@@ -1,0 +1,45 @@
+body {
+    background-color: #f2f2ea;
+    .fa {
+        margin-left: 3px;
+    }
+    a {
+        text-decoration: none !important;
+    }
+}
+.wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 100%;
+}
+.alert {
+    color: #fff;
+    &.alert-info {
+        a {
+            color: #323e50;
+            transition: 0.3s all;
+            &:hover {
+                color: #dce4ec;
+            }
+        }
+    }
+}
+
+footer{
+    &.main-footer{
+        @include longshadow(darken($brand-success, 5% ));
+        border-top: 4px solid darken($brand-success , 10%);
+        background-color: lighten($brand-success , 1%);
+        padding-top: 15px;
+        padding-bottom: 10px;
+        color:#fff;
+        @include user-select(none);
+    }
+}
+.affix{
+    display: block;
+    width: 14.21% !important;
+}
